@@ -73,12 +73,12 @@
     _doneTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [_doneTextButton setTitle: _doneTextButtonTitle ?
         _doneTextButtonTitle : NSLocalizedStringFromTableInBundle(@"Done",
-																  @"TOCropViewControllerLocalizable",
-																  resourceBundle,
+                                                                  @"TOCropViewControllerLocalizable",
+                                                                  resourceBundle,
                                                                   nil)
                      forState:UIControlStateNormal];
     [_doneTextButton setTitleColor:[UIColor colorWithRed:0.23 green: 0.65 blue: 1.00 alpha: 1.00] forState:UIControlStateNormal];
-    [_doneTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
+    [_doneTextButton.titleLabel setFont:[UIFont fontWithName:@"Montserrat-Regular" size:17.0f]];
     [_doneTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [_doneTextButton sizeToFit];
     [self addSubview:_doneTextButton];
@@ -93,12 +93,12 @@
     
     [_cancelTextButton setTitle: _cancelTextButtonTitle ?
         _cancelTextButtonTitle : NSLocalizedStringFromTableInBundle(@"Cancel",
-																	@"TOCropViewControllerLocalizable",
-																	resourceBundle,
+                                                                    @"TOCropViewControllerLocalizable",
+                                                                    resourceBundle,
                                                                     nil)
                        forState:UIControlStateNormal];
     [_cancelTextButton setTitleColor:[UIColor colorWithRed:0.23 green: 0.65 blue: 1.00 alpha: 1.00] forState:UIControlStateNormal];
-    [_cancelTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
+    [_cancelTextButton.titleLabel setFont:[UIFont fontWithName:@"Montserrat-Regular" size:17.0f]];
     [_cancelTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [_cancelTextButton sizeToFit];
     [self addSubview:_cancelTextButton];
